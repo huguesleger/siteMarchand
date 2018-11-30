@@ -1,0 +1,15 @@
+.btn-basket {
+background-color: $color_primary;
+  padding: 10px;
+  border: 1px solid #81c7cf;
+  border-radius: 0;
+  color: #fff;
+  &:hover {
+    color: #81c7cf;
+    background: transparent;
+    border: 1px solid #81c7cf;
+  }
+}
+.navbar-text.quantity {
+  color: #ccc;
+}

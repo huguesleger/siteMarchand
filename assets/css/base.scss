@@ -1,0 +1,47 @@
+body {
+  background-color: #fff;
+  padding-top: 4.2rem;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: $color_primary ;
+  border-color: $color_primary;
+    &:hover {
+      background-color: transparent;
+      border-color: $color_primary;
+      color: $color_primary;
+    }
+    &:not(:disabled):not(.disabled):active{
+      background-color: transparent;
+      border-color: $color_primary;
+      color: $color_primary;
+    }
+    &:focus {
+      background-color: transparent;
+      border-color: $color_primary;
+      color: $color_primary;
+      box-shadow: none;
+    }
+    &:not(:disabled):not(.disabled):active:focus {
+      box-shadow: none;
+    }
+}
+
+/*-----------------------
+-------panier-------
+-----------------------*/
+.detail-panier {
+  padding: 50px 0;
+}
+
+.next-panier {
+  background-color: rgba(0,0,0,.075);
+  display: flex;
+}
+
+@media (max-width: 575.98px){
+.table-responsive-sm {
+  font-size: 10px;
+}
+}

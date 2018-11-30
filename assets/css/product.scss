@@ -1,0 +1,37 @@
+.title-articles {
+  padding: 30px 0;
+}
+
+.products-home .card {
+  max-width: 18rem;
+  margin: 0 auto;
+}
+
+/*-----------------------
+-------produit detail-------
+-----------------------*/
+.product-detail {
+  margin-bottom: 50px;
+}
+.product-img .img-thumbnail {
+  border-radius: 0;
+  border: none;
+}
+
+.item-price {
+  color: $color_primary;
+  font-weight: bold;
+}
+
+.icon-card {
+  font-size: 25px;
+  padding-top: 0;
+}
+
+.extra-product {
+  padding-top: 50px;
+  .list-group-item.active {
+    background-color: $color_primary;
+    border-color: $color_primary;
+  }
+}

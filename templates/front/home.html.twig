@@ -1,0 +1,23 @@
+{% extends 'baseFront.html.twig' %}
+
+{% block body %}
+    <h1 class="text-center title-articles">Nos articles</h1>
+    <div class="products-home">
+        <div class="container">
+            <div class="row">
+                {% for produit in produits %}
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card mb-5">
+                            <img class="card-img-top img-fluid" src="https://via.placeholder.com/287" alt="img-{{ produit.name }}">
+                            <div class="card-body">
+                                <h4 class="card-title">{{ produit.name }}</h4>
+                                <p class="card-text">{{ produit.description|truncate(20, true, ' ...') }}</p>
+                                <a href="{{path("produit",{"id":produit.id})}}" class="btn btn-primary">Détail</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

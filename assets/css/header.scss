@@ -1,0 +1,41 @@
+/*-----------------------
+-------slider-------
+-----------------------*/
+
+.slider {
+  position: relative;
+  height: 390px;
+  overflow: hidden;
+}
+
+.main-slider .slick-slide {
+  position: relative !important;
+}
+
+.main-slider .slider-img {
+  height: 390px;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*-----------------------
+-------header-page-------
+-----------------------*/
+.header-page {
+  padding: 50px 0;
+
+}
+
+.nav-breadcrumb {
+  background-color: $color_primary;
+  .breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    .breadcrumb-item a {
+      color:#fff;
+    }
+  }
+}
